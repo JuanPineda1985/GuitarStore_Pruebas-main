@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import apiBaseUrl from '../../../shared/utils/Api';
+import Design from '../../../shared/styles/Design';
 import {
     Card,
     CardActions,
@@ -14,10 +15,11 @@ import {
 
 const UsersPage = () => {
     const [users, setUsers] = useState([])
+    const classes = Design()
 
     const generateItems = (data) => {
         return data.map((item) => {
-            return <Grid item xs={6}>
+            return <Grid item xs={6} className={classes.cardStyle}>
                 <Card>
                     <CardContent>
                         <Typography>

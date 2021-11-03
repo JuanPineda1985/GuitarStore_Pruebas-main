@@ -38,8 +38,14 @@ const Design = makeStyles(theme => ({
       marginTop: theme.spacing(1)
     },
     button:{
-      marginTop: theme.spacing(10)
-      
+      marginTop: theme.spacing(10) 
+    },
+    cardsStyle:{
+      opacity: '0.9',
+      height: '80%',
+      marginTop: 0,
+      width: '100%',
+      height: '100%'
     }
 }))
 
