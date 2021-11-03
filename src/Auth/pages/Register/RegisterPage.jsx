@@ -41,7 +41,7 @@ export const RegisterPage = () => {
   }
 
   return (
-    <Grid container component='main' className={classes.root}>
+    <Grid container component='main' className={classes.root} >
         <Container component={Paper} elevation={5} maxWidth='xs' className={classes.container} >
           <div className={classes.div}>
             <Avatar className={classes.avatar} />
