@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 const primaryColor = 'blue';
 const Colors = makeStyles({
     primary: {
-        backgroundColor: primaryColor
+        backgroundColor: 'black'
     },
     btnPrimary: {
         color: 'white',

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import apiBaseUrl from '../../../shared/utils/Api';
+import Design from '../../../shared/styles/Design';
 import {
     Card,
     CardActions,
@@ -8,16 +9,17 @@ import {
     Container,
     Grid,
     Typography,
-    Button
+    Button,
+    makeStyles
 } from '@material-ui/core';
-
 
 const UsersPage = () => {
     const [users, setUsers] = useState([])
+    const classes = Design()
 
     const generateItems = (data) => {
         return data.map((item) => {
-            return <Grid item xs={6}>
+            return <Grid item xs={4} className={classes.cardsC}> 
                 <Card>
                     <CardContent>
                         <Typography>
@@ -32,7 +34,7 @@ const UsersPage = () => {
                     </CardContent>
                     <CardActions>
                         <Button variant="contained" color="primary">
-                            Primary
+                            actualizar
                         </Button>
                     </CardActions>
                 </Card>
