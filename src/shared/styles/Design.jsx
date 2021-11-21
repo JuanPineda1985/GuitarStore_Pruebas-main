@@ -13,6 +13,13 @@ const Design = makeStyles(theme => ({
         backgroundPosition: 'center',
         height: '100vh'
     },
+    root2:{
+      backgroundImage: `url(${fondo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      height: '100vh'
+  },
     container:{
       opacity: '0.9',
       height: '80%',

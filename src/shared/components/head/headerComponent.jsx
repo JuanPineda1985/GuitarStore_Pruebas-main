@@ -14,6 +14,9 @@ const HeaderComponent = () => {
                 <IconButton edge="start"  color="inherit" aria-label="menu">
                 <Link color="inherit" component={RouterLink} to="/users">user</Link>
                 </IconButton>
+                <IconButton edge="start"  color="inherit" aria-label="menu">
+                <Link color="inherit" component={RouterLink} to="/users">Home</Link>
+                </IconButton>
             </Toolbar>
         </AppBar>
     )
